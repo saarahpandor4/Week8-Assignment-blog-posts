@@ -3,22 +3,108 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* --background: #ffffff;
+  --foreground: #171717; */
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-image: linear-gradient(
+      112.5deg,
+      rgb(147, 155, 155) 0%,
+      rgb(147, 155, 155) 10%,
+      rgb(158, 164, 156) 10%,
+      rgb(158, 164, 156) 53%,
+      rgb(147, 155, 155) 53%,
+      rgb(147, 155, 155) 55%,
+      rgb(147, 155, 155) 55%,
+      rgb(147, 155, 155) 60%,
+      rgb(111, 131, 133) 60%,
+      rgb(111, 131, 133) 88%,
+      rgb(151, 141, 141) 88%,
+      rgb(151, 141, 141) 91%,
+      rgb(99, 99, 99) 91%,
+      rgb(99, 99, 99) 100%
+    ),
+    linear-gradient(
+      157.5deg,
+      rgb(147, 155, 155) 0%,
+      rgb(147, 155, 155) 10%,
+      rgb(158, 164, 156) 10%,
+      rgb(158, 164, 156) 53%,
+      rgb(147, 155, 155) 53%,
+      rgb(147, 155, 155) 55%,
+      rgb(147, 155, 155) 55%,
+      rgb(147, 155, 155) 60%,
+      rgb(111, 131, 133) 60%,
+      rgb(111, 131, 133) 88%,
+      rgb(151, 141, 141) 88%,
+      rgb(151, 141, 141) 91%,
+      rgb(99, 99, 99) 91%,
+      rgb(99, 99, 99) 100%
+    ),
+    linear-gradient(
+      135deg,
+      rgb(147, 155, 155) 0%,
+      rgb(147, 155, 155) 10%,
+      rgb(158, 164, 156) 10%,
+      rgb(158, 164, 156) 53%,
+      rgb(147, 155, 155) 53%,
+      rgb(147, 155, 155) 55%,
+      rgb(147, 155, 155) 55%,
+      rgb(147, 155, 155) 60%,
+      rgb(111, 131, 133) 60%,
+      rgb(111, 131, 133) 88%,
+      rgb(151, 141, 141) 88%,
+      rgb(151, 141, 141) 91%,
+      rgb(99, 99, 99) 91%,
+      rgb(99, 99, 99) 100%
+    ),
+    linear-gradient(90deg, rgb(158, 164, 156), rgb(228, 228, 228));
+  background-blend-mode: overlay, overlay, overlay, normal;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #65809f;
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #f6f7f5;
+  font-size: large;
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-size: 60px;
+  font-style: normal;
+}
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* font-style: italic; */
+  font-weight: bolder;
+  font-size: 25px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #f7f5f5;
+    --foreground: #0a0909;
   }
 }
 
-body {
+/* body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 @layer utilities {
   .text-balance {

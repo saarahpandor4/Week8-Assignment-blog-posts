@@ -1,101 +1,72 @@
 import Image from "next/image";
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+export const metadata = {
+  title: "HomePage",
+  description: "HomePage destinations!",
+};
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+export default function HomePage() {
+  return (
+    <>
+      <h1> Welcome to Xplore destination blog!</h1>
+      <h2> Post your experience on your travels</h2>
+      <div
+        style={{
+          display: "grid",
+          gridGap: "1px",
+          gridTemplateColumns: "repeat(auto-fit, minmax(350px, auto))",
+        }}
+      >
+        <div style={{ position: "relative" }}>
+          <Image
+            src="https://www.thetrainline.com/cms/media/1360/france-eiffel-tower-paris.jpg?mode=crop&width=1080&height=1080&quality=70"
+            alt="paris"
+            className="rounded-lg flex-row"
+            width={350}
+            height={350}
+          />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        <Image
+          src="https://www.thetravellerworldguide.com/wp-content/uploads/2024/03/istockphoto-501296920-612x612-1.jpg"
+          alt="beach"
+          className="rounded-lg flex-row"
+          width={350}
+          height={350}
+        />
+
+        <Image
+          src="https://www.njarchitects.co.uk/wp-content/uploads/2019/05/rome-city-europe.jpg"
+          alt="architecture"
+          className="rounded-lg flex-col"
+          width={350}
+          height={350}
+        />
+
+        <Image
+          src="https://www.discover-the-world.com/app/uploads/2018/08/norway-northern-tromso-surrounds-with-aurora-istk.jpg"
+          alt="northern lights"
+          className="rounded-lg flex-row"
+          width={350}
+          height={350}
+        />
+        <Image
+          src="https://www.usatoday.com/gcdn/authoring/authoring-images/2024/08/28/USAT/74981692007-adobe-stock-731317976.jpeg"
+          alt="Safari"
+          className="rounded-lg flex-row"
+          width={350}
+          height={350}
+        />
+
+        <Image
+          src="https://www.wallart.com/media/catalog/product/cache/5b18b93ddbe5d6592c6b175f41d24454/n/e/new-york-manhattan-skyline-op-fotobehang_10.jpg"
+          alt="New-York"
+          className="rounded-lg flex-row"
+          width={350}
+          height={350}
+        />
+      </div>{" "}
+      <Image />
+    </>
   );
 }
