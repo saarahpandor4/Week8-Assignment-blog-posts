@@ -1,6 +1,6 @@
 //We need some navigation
-import pg from "pg";
-import { connectionString } from "pg/lib/defaults";
+// import pg from "pg";
+// import { connectionString } from "pg/lib/defaults";
 import { db } from "@/utils/dbConnection";
 import CommentsPage from "@/components/Comment";
 import DeleteButton from "@/components/DeleteButton";

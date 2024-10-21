@@ -12,7 +12,7 @@ export default function Header() {
         <Link href="/about">
           {" "}
           About
-          <i class="fa-solid fa-globe"></i>{" "}
+          <i className="fa-solid fa-globe"></i>{" "}
         </Link>
 
         <Link href="/posts">

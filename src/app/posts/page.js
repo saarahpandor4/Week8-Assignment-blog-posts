@@ -1,7 +1,7 @@
 //need navigation
 //we need query strings to sort the data asc and desc
 //REMEMBER metadata
-import Image from "next/image";
+
 import { db } from "@/utils/dbConnection";
 import Link from "next/link";
 
@@ -37,12 +37,12 @@ export default async function Postspage({ searchParams }) {
         <Link href="/posts?sort=asc-posts">
           {" "}
           Sort ascending
-          <i class="fa-solid fa-sort-up"></i>
+          <i className="fa-solid fa-sort-up"></i>
         </Link>{" "}
         <Link href="/posts?sort=desc-posts">
           {" "}
           Sort descending
-          <i class="fa-solid fa-sort-down"></i>
+          <i className="fa-solid fa-sort-down"></i>
         </Link>
       </div>
 
@@ -58,8 +58,6 @@ export default async function Postspage({ searchParams }) {
           <p>{post.location}</p>
         </div>
       ))}
-
-      {/* here i need a list of my posts  */}
     </>
   );
 }
